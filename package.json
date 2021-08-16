@@ -1,0 +1,28 @@
+{
+  "name": "@wonoly/proxy-geneerator",
+  "version": "1.0.0",
+  "description": "Generate random IP adresses",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wonoly/proxy-generator.git"
+  },
+  "keywords": [
+    "proxy",
+    "wonoly",
+    "generator"
+  ],
+  "author": "wonoly",
+  "license": "SEE LICENSE IN ./LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/wonoly/proxy-generator/issues"
+  },
+  "homepage": "https://github.com/wonoly/proxy-generator#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.10",
+    "request": "^2.88.2"
+  }
+}
