@@ -1,5 +1,6 @@
 const request = require('request');
 const cheerio = require('cheerio');
+const UserAgent = require('user-agents');
 
 exports.generateProxy = async () => {
     let ip_addresses = [];
@@ -30,7 +31,10 @@ exports.generateProxy = async () => {
             port: port_numbers[random_number],
             url: `http://${ip_addresses[random_number]}:${port_numbers[random_number]}`,
         };
-        return resolve(proxy)
 
+        const userAgent = new UserAgent({ deviceCategory: 'desktop' }).userAgent;
+        proxy.userAgent = userAgent
+
+        return resolve(proxy)
     }));
 }
