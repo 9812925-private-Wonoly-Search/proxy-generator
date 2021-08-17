@@ -1,6 +1,6 @@
 {
-  "name": "@wonoly/proxy-geneerator",
-  "version": "1.0.1",
+  "name": "@wonoly/proxy-generator",
+  "version": "1.0.0",
   "description": "Generate random IP adresses",
   "main": "src/index.js",
   "scripts": {
