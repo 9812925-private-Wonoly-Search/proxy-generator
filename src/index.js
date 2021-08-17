@@ -25,7 +25,11 @@ exports.generateProxy = async () => {
         port_numbers.join(", ");
 
         let random_number = Math.floor(Math.random() * 100);
-        proxy = `http://${ip_addresses[random_number]}:${port_numbers[random_number]}`;
+        proxy = {
+            host: ip_addresses[random_number],
+            port: port_numbers[random_number],
+            url: `http://${ip_addresses[random_number]}:${port_numbers[random_number]}`,
+        };
         return resolve(proxy)
 
     }));

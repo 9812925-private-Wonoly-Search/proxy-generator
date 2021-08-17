@@ -1,5 +1,5 @@
 # proxy-generator
-👽️ create random ip adresses
+👽️ create random proxies
 
 ### Install
 
